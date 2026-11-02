@@ -1,0 +1,27 @@
+:root { --noche:#050B18; --oscuro:#0B1A33; --marca:#2563EB; --blanco:#F1F5FD; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: 'Inter', system-ui, sans-serif; background: var(--noche); color: var(--blanco); line-height:1.5; }
+a { color: var(--marca); }
+.top { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; padding:14px 5vw; background: var(--oscuro); }
+.logo { color: var(--blanco); text-decoration:none; font-weight:800; font-size:1.3rem; display:flex; align-items:center; gap:8px; }
+.logo b { color: var(--marca); }
+.rayo { background: var(--marca); border-radius:8px; padding:2px 8px; }
+nav { display:flex; gap:20px; } nav a { color: var(--blanco); text-decoration:none; }
+nav a:hover, nav a:focus-visible { color:#7aa2f7; }
+main { max-width:1100px; margin:0 auto; padding:28px 5vw; }
+h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); margin:0 0 18px; }
+.filtros { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:24px; }
+input, select { background: var(--oscuro); color: var(--blanco); border:1px solid #1d3157; border-radius:8px; padding:10px 12px; font:inherit; }
+button { background: var(--marca); color:#fff; border:0; border-radius:8px; padding:10px 16px; font:inherit; font-weight:600; cursor:pointer; }
+button:disabled { opacity:.4; cursor:not-allowed; } button.sec { background:#1d3157; }
+:focus-visible { outline:2px solid #7aa2f7; outline-offset:2px; }
+.grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap:18px; }
+.card { background: var(--oscuro); border:1px solid #1d3157; border-radius:12px; padding:18px; display:flex; flex-direction:column; gap:6px; }
+.card h3 { margin:0; } .card p { margin:0; color:#9fb2d4; flex:1; }
+.card strong { font-size:1.3rem; color: var(--marca); } .stock { font-size:.85rem; color:#9fb2d4; }
+.tabla { width:100%; border-collapse:collapse; margin-bottom:16px; }
+.tabla th, .tabla td { text-align:left; padding:10px; border-bottom:1px solid #1d3157; }
+.total { font-size:1.2rem; }
+.formulario { display:grid; gap:12px; max-width:380px; } .formulario label { display:grid; gap:4px; }
+.aviso { background: var(--oscuro); border-left:4px solid var(--marca); padding:12px 16px; border-radius:6px; }
+footer { text-align:center; padding:24px; color:#9fb2d4; font-size:.85rem; }
